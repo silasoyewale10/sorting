@@ -43,6 +43,5 @@ InsertionSort(int[] arr)
  [4,8,15,16,23,42];
  
  ## Whiteboard image
- ![](https://github.com/silasoyewale10/taskmaster/blob/master/screenshots/homepage.png)
  ![](https://github.com/silasoyewale10/sorting/blob/master/src/main/resources/assests/whiteboard-26.JPG)
 
