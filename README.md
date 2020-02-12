@@ -17,3 +17,22 @@ Present a complete set of working tests
 The big o is quadratic. 
 ## Solution
 <!-- Embedded whiteboard image -->
+
+# Merge Sort
+
+# Challenge Summary
+Convert the pseudocode of an merge sort to a fully working code with tests. 
+
+## Challenge Description
+Provide a visual step through for each of the sample arrays based on the provided pseudo code
+Convert the pseudo-code into working code in your language
+Present a complete set of working tests
+
+## Time and space efficiency for merge
+O(n)
+
+## Time and space efficiency for mergeSort
+O(n) * log(n)
+
+
+
