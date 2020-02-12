@@ -39,5 +39,9 @@ InsertionSort(int[] arr)
  ## Iteration 6:
  i =6, jumps out of the loop and returns the output array. 
  
- Output:
+ ## Output:
  [4,8,15,16,23,42];
+ 
+ ## Whiteboard image
+ ![](https://github.com/silasoyewale10/taskmaster/blob/master/screenshots/homepage.png)
+
