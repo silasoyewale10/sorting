@@ -184,5 +184,5 @@ swap is invoked to swap 16 for 23 and partition returns 4 leaving only 16.
 base case is triggered and execution ends.
 
 ## Whiteboard image
- ![](https://github.com/silasoyewale10/sorting/blob/master/src/main/resources/assests/whiteboard-27.JPG)
+ ![](https://github.com/silasoyewale10/sorting/blob/master/src/main/resources/assests/whiteboard-28.JPG)
 
