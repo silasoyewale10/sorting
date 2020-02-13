@@ -37,6 +37,19 @@ O(n) * log(n)
 
 # Quick Sort
 
+# Challenge Summary
+Convert the pseudocode of a quick sort to a fully working code with tests. 
+
+## Challenge Description
+Provide a visual step through for each of the sample arrays based on the provided pseudo code
+Convert the pseudo-code into working code in your language
+Present a complete set of working tests
+
+## Time efficiency for quicksort
+O(nlogn)
+
+## space efficiency for quickSort
+o(1). constant space
 
 
 
