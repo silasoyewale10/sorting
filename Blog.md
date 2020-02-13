@@ -123,3 +123,66 @@ Here, merge merges both sorted and produce [4,5,6,7,8,9,10,33]
  ![](https://github.com/silasoyewale10/sorting/blob/master/src/main/resources/assests/whiteboard-27.JPG)
 
 
+
+
+
+# QUICK SORT. 20200212
+### SUMMARY 
+Quick sort is a way of sorting things by comparing two things at the same time. The two things compared are the adjacent things and each elemet that is larger is moved to the right at that specific instance of comparison. After the comparison is done for all items, the lowest would be on the left while the highest will be on the right. Since this data structure is an array, th indexes are what is swapped to reassign a new location for the items. The swapping needs a point of reference called the pivot. the pivot has a value and moves everyhing lesser than the pivot is on the pivot's left and everything higher than the pivot is on the pivots right. The pivot is set with the partition helper method and the location swapping is done with the swapping helper method. 
+
+## PSEUDOCODE
+ALGORITHM QuickSort(arr, left, right)
+    if left < right
+        // Partition the array by setting the position of the pivot value 
+        DEFINE position <-- Partition(arr, left, right)
+        // Sort the left
+        QuickSort(arr, left, position - 1)
+        // Sort the right
+        QuickSort(arr, position + 1, right)
+
+ALGORITHM Partition(arr, left, right)
+    // set a pivot value as a point of reference
+    DEFINE pivot <-- arr[right]
+    // create a variable to track the largest index of numbers lower than the defined pivot
+    DEFINE low <-- left - 1
+    for i <- left to right do
+        if arr[i] <= pivot
+            low++
+            Swap(arr, i, low)
+
+     // place the value of the pivot location in the middle.
+     // all numbers smaller than the pivot are on the left, larger on the right. 
+     Swap(arr, right, low + 1)
+    // return the pivot index point
+     return low + 1
+
+ALGORITHM Swap(arr, i, low)
+    DEFINE temp;
+    temp <-- arr[i]
+    arr[i] <-- arr[low]
+    arr[low] <-- temp
+
+
+
+## ALGORITHMIC EXPLANATION. The given array is [8,4,23,42,16,15]]. After the methods is executed, it should be [4,8,15,16,23,42].
+ 
+ ## Round 1:
+The partition function is called to determine the pivot position
+
+## Round 2
+The array is rearranged with the swap function as 8,4,15,23,42,16. The quicksort is called on 8 and 4 and rearranged as 4,8.
+
+## Round 3
+Quicksort is recurively called on partition function to determine new pivot position for the right
+
+## Round 4: 
+Partition returns 5, the index for 16. quicksort is called on (Arr, 3,5) and partitino returns 5
+## Round 5
+swap is invoked to swap 16 for 23 and partition returns 4 leaving only 16.
+
+## rOUND 6
+base case is triggered and execution ends.
+
+## Whiteboard image
+ ![](https://github.com/silasoyewale10/sorting/blob/master/src/main/resources/assests/whiteboard-27.JPG)
+
